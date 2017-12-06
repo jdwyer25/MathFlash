@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Math Flash Cards</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="share">Share</string>
+    <string name="title_image">Title Image</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-0959410565463062/4898361711</string>
+    <string name="addition">Addition</string>
+    <string name="multiplication">Multiplication</string>
+    <string name="subtraction">Subtraction</string>
+    <string name="division">Division</string>
+    <string name="clear">Clear</string>
+    <string name="back">Back</string>
+    <string name="your_answer">Your Answer:</string>
+    <string name="submit">Submit</string>
+    <string name="default_number">0</string>
+</resources>
