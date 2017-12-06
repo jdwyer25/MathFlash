@@ -8,12 +8,27 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 public class HomeActivity extends Activity {
+
+    private AdRequest adRequest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        MobileAds.initialize(getApplicationContext(), getResources().getString(R.string.app_pub_id));
+        AdView mAdView = findViewById(R.id.adView);
+        if(BuildConfig.DEBUG){
+            adRequest = new AdRequest.Builder().addTestDevice("990D881316626793E9B06C55C545B512").build();
+        }else{
+            adRequest = new AdRequest.Builder().build();
+        }
+        mAdView.loadAd(adRequest);
     }
 
     @Override

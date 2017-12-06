@@ -1,7 +1,8 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="dwyer.com.mathflash.HomeFragment">
 
     <ImageView
@@ -12,6 +13,41 @@
         android:src="@drawable/title"
         android:contentDescription="@string/title_image" />
 
+    <Button
+        android:layout_marginTop="@dimen/button_spacing"
+        android:id="@+id/btnAddition"
+        style="@style/button_text"
+        android:layout_width="match_parent"
+        android:background="@drawable/buttons_main_screen_blue"
+        android:layout_height="wrap_content"
+        android:text="@string/addition"
+        />
 
+    <Button
+        android:layout_marginTop="@dimen/button_spacing"
+        style="@style/button_text"
+        android:id="@+id/btnSubtraction"
+        android:background="@drawable/buttons_main_screen_red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/subtraction"/>
 
-</FrameLayout>
+    <Button
+        android:layout_marginTop="@dimen/button_spacing"
+        style="@style/button_text_dark"
+        android:id="@+id/btnMultiplication"
+        android:background="@drawable/buttons_main_screen_yellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/multiplication"/>
+
+    <Button
+        android:layout_marginTop="@dimen/button_spacing"
+        style="@style/button_text_dark"
+        android:id="@+id/btnDivision"
+        android:background="@drawable/buttons_main_screen_green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/division"/>
+
+</LinearLayout>
